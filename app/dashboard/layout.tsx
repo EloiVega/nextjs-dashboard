@@ -1,4 +1,12 @@
+import { Metadata } from "next"
 import SideNav from "../ui/dashboard/sidenav"
+
+export const metadata: Metadata = {
+  title: {
+    template: '%s | Dashboard',
+    default: 'Dashboard'
+  }
+}
 
 const Layout = ({children}: {children: React.ReactNode}) => {
   return (
